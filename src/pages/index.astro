@@ -1,6 +1,5 @@
 ---
-import { client } from "../../.tina/__generated__/client";
-import Card from "../components/Card.astro";
+import client from "../../.tina/__generated__/client";
 import { MyComponent } from "../components/react";
 const response = await client.queries.post({ relativePath: "hello-world.md" });
 ---
