@@ -19,5 +19,5 @@ const tina = ({ directiveName = "tina" } = {}) => ({
 export default defineConfig({
   integrations: [tailwind(), react(), tina()],
   output: "server",
-  adapter: cloudflare(),
+  adapter: cloudflare({ mode: "directory" }),
 });
