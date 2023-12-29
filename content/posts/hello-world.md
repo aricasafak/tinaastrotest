@@ -4,7 +4,7 @@ cards:
     link: 'https://docs.astro.build/'
     body: Learn how Astro works and explore the official API docs.
     image: /uploads/elementor-placeholder-image.webp
-  - title: Integrations
+  - title: Integrations 22
     link: 'https://astro.build/integrations/'
     body: Supercharge your project with new frameworks and libraries.
     image: /uploads/elementor-placeholder-image.webp

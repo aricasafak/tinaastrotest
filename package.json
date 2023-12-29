@@ -8,8 +8,8 @@
     "build": "tinacms build --local --skip-cloud-checks & sleep 4 && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "pages:dev": "wrangler pages dev --compatibility-date=2023-12-18 -- astro dev",
-    "pages:deploy": "astro build && wrangler pages deploy ./dist"
+    "pages:dev": "wrangler pages dev --compatibility-date=2023-12-18 -- npm run dev",
+    "pages:deploy": "npm run build && wrangler pages deploy ./dist"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
