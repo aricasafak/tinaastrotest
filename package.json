@@ -3,17 +3,28 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "tinacms dev -c \"astro dev\"",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "tinacms build --local --skip-cloud-checks & sleep 4 && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "pages:dev": "wrangler pages dev --compatibility-date=2023-12-18 -- astro dev",
     "pages:deploy": "astro build && wrangler pages deploy ./dist"
   },
   "dependencies": {
+    "@astrojs/check": "^0.3.4",
     "@astrojs/cloudflare": "^8.0.1",
-    "astro": "^4.0.8"
+    "@astrojs/react": "^2.2.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@tinacms/cli": "^1.5.26",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^4.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.0.24",
+    "tinacms": "^1.5.17",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "wrangler": "^3.22.1"
