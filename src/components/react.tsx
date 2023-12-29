@@ -1,6 +1,6 @@
 import { useTina } from "tinacms/dist/react";
 import Card from "./Card";
-import type { PostQuery } from "../../.tina/__generated__/types";
+import type { PostQuery } from "../../tina/__generated__/types";
 import React from "react";
 import type { ReactNode } from "react";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import type { PostCards } from "../../.tina/__generated__/types";
+import type { PostCards } from "../../tina/__generated__/types";
 
 export default function Card({ link, title, body, image }: PostCards) {
   return (
