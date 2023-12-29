@@ -1,11 +1,11 @@
 // .tina/config.ts
 import { defineStaticConfig } from "tinacms";
-var branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+var branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
 var config_default = defineStaticConfig({
   branch,
-  clientId: null,
+  clientId: "6e54478d-3a7f-45e0-9b38-9d63cbcc3374",
   // Get this from tina.io
-  token: null,
+  token: "d77a16071597e7125dd5eb671d4571195eb8b5b6",
   // Get this from tina.io
   build: {
     outputFolder: "admin",
