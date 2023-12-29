@@ -1,10 +1,13 @@
-import { defineStaticConfig } from "tinacms";
+import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
-  process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
+  process.env.GITHUB_BRANCH ||
+  process.env.VERCEL_GIT_COMMIT_REF ||
+  process.env.HEAD ||
+  "master";
 
-export default defineStaticConfig({
+export default defineConfig({
   branch,
   clientId: "6e54478d-3a7f-45e0-9b38-9d63cbcc3374", // Get this from tina.io
   token: "d77a16071597e7125dd5eb671d4571195eb8b5b6", // Get this from tina.io
@@ -14,10 +17,11 @@ export default defineStaticConfig({
   },
   media: {
     tina: {
-      mediaRoot: "uploads",
+      mediaRoot: "",
       publicFolder: "public",
     },
   },
+  // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
     collections: [
       {
